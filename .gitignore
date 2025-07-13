@@ -1,0 +1,66 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ─── CocoaPods Target Support Files for CI build ───
+# Pods 전체 무시
+ios/Pods/**
+
+# Target Support Files 디렉토리 언아이그노어
+!ios/Pods/Target Support Files/
+!ios/Pods/Target Support Files/Pods-Runner/
+
+# 꼭 필요한 파일만 언아이그노어
+!ios/Pods/Target Support Files/Pods-Runner/Generated.xcconfig
+!ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-*-input-files.xcfilelist
+!ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-*-output-files.xcfilelist
+!ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-*-input-files.xcfilelist
+!ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-*-output-files.xcfilelist
+
+# 기타 Build 산출물 무시
+ios/Pods/Build/**
+
+# Environment variables
+.env
+.env.local
+.env.*.local

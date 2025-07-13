@@ -1,0 +1,8 @@
+{
+<<<<<<< HEAD
+    "debug.toolBarLocation": "floating"
+=======
+    "debug.toolBarLocation": "floating",
+    "cmake.ignoreCMakeListsMissing": true
+>>>>>>> d51121a (02.05)
+}

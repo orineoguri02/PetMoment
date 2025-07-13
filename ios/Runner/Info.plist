@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- 백그라운드 모드 설정 (예: fetch, remote-notification) -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>remote-notification</string>
+    </array>
+    
+    <!-- 사용자 알림 권한 설명 -->
+    <key>NSUserNotificationUsageDescription</key>
+    <string>알림 사용에 필요한 권한 설명</string>
+    
+    <!-- 카메라 프레임 지속 시간 관련 -->
+    <key>CADisableMinimumFrameDurationOnPhone</key>
+    <true/>
+    
+    <!-- 번들 기본 설정 -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Pet Moment</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>pet_moment</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(FLUTTER_BUILD_NAME)</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    
+    <!-- URL 스킴 (예: 구글, 카카오, 기타) -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.1056502303700-rf441rdh4mt8hr4de413iobgg3mj22ep</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>kakao899b14236214826bcd5134871607fb2c</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.petMoment1</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- 빌드 번호 -->
+    <key>CFBundleVersion</key>
+    <string>$(FLUTTER_BUILD_NUMBER)</string>
+    
+    <!-- 앱에서 다른 앱으로의 URL 쿼리 허용 (예: 카카오 관련) -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>kakaokompassauth</string>
+        <string>kakaolink</string>
+    </array>
+    
+    <!-- iOS 전용 설정 -->
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    
+<key>NSCameraUsageDescription</key>
+<string>사진 촬영을 위해 카메라 접근 권한이 필요합니다.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>촬영한 사진을 저장하고 불러오기 위해 사진 라이브러리 접근 권한이 필요합니다.</string>
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>촬영한 사진을 앨범에 저장하기 위해 권한이 필요합니다.</string>
+    
+    <!-- (필요 시) iOS 14 이상에서 사진 라이브러리 추가 권한 -->
+    <!-- <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>앱에서 사진을 저장하기 위해 사진 라이브러리 추가 권한이 필요합니다.</string> -->
+    
+    <!-- 간접 입력 이벤트 지원 -->
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    
+    <!-- 런치 스토리보드 및 메인 스토리보드 파일 -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+    
+    <!-- 지원하는 인터페이스 방향 (iPhone) -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- 지원하는 인터페이스 방향 (iPad) -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>HS유지체.ttf</string>
+    </array>
+</dict>
+</plist>

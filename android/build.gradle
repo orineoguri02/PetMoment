@@ -1,0 +1,38 @@
+// buildscript 블록은 플러그인 선언보다 먼저 위치해야 합니다.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // 예시: Android Gradle Plugin 의존성
+        classpath 'com.petMoment1'
+    }
+}
+
+plugins {
+    // 프로젝트에서 사용할 플러그인 선언 (apply false를 사용해 각 모듈별로 적용)
+    id 'com.android.application' version '8.0.0' apply false
+    id 'com.android.library' version '8.0.0' apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
